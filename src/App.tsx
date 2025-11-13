@@ -7,6 +7,11 @@ import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import Dashboard from "./pages/Dashboard";
 import Patients from "./pages/Patients";
+import Appointments from "./pages/Appointments";
+import Billing from "./pages/Billing";
+import Inventory from "./pages/Inventory";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,11 +37,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Layout><Dashboard /></Layout>} />
           <Route path="/patients" element={<Layout><Patients /></Layout>} />
-          <Route path="/appointments" element={<Layout><div className="text-center p-8">Rendez-vous à venir...</div></Layout>} />
-          <Route path="/billing" element={<Layout><div className="text-center p-8">Facturation à venir...</div></Layout>} />
-          <Route path="/inventory" element={<Layout><div className="text-center p-8">Gestion des stocks à venir...</div></Layout>} />
-          <Route path="/reports" element={<Layout><div className="text-center p-8">Rapports à venir...</div></Layout>} />
-          <Route path="/settings" element={<Layout><div className="text-center p-8">Paramètres à venir...</div></Layout>} />
+          <Route path="/appointments" element={<Layout><Appointments /></Layout>} />
+          <Route path="/billing" element={<Layout><Billing /></Layout>} />
+          <Route path="/inventory" element={<Layout><Inventory /></Layout>} />
+          <Route path="/reports" element={<Layout><Reports /></Layout>} />
+          <Route path="/settings" element={<Layout><Settings /></Layout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
