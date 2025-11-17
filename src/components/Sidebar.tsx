@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import React from "react";
 
 const navItems = [
-  { icon: Home, label: "Tableau de bord", path: "/" },
+  { icon: Home, label: "Tableau de bord", path: "/dashboard" },
   { icon: Users, label: "Patients", path: "/patients" },
   { icon: Calendar, label: "Rendez-vous", path: "/appointments" },
   { icon: FileText, label: "Facturation", path: "/billing" },
