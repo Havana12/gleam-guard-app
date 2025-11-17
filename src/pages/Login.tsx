@@ -33,7 +33,7 @@ export default function Login() {
     <div 
       className="min-h-screen flex items-center justify-center px-4 relative"
       style={{
-        backgroundImage: 'url(/src/upload/imagedentaire.jpg)',
+        backgroundImage: 'url(/upload/imagedentaire.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
