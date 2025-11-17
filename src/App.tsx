@@ -53,13 +53,13 @@ const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Login />} />
     <Route path="/login" element={<Login />} />
-    <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} />
-    <Route path="/patients" element={<Layout><Patients /></Layout>} />
-    <Route path="/appointments" element={<Layout><Appointments /></Layout>} />
-    <Route path="/billing" element={<Layout><Billing /></Layout>} />
-    <Route path="/inventory" element={<Layout><Inventory /></Layout>} />
-    <Route path="/reports" element={<Layout><Reports /></Layout>} />
-    <Route path="/settings" element={<Layout><Settings /></Layout>} />
+    <Route path="/dashboard" element={<ProtectedRoute><Layout><Dashboard /></Layout></ProtectedRoute>} />
+    <Route path="/patients" element={<ProtectedRoute><Layout><Patients /></Layout></ProtectedRoute>} />
+    <Route path="/appointments" element={<ProtectedRoute><Layout><Appointments /></Layout></ProtectedRoute>} />
+    <Route path="/billing" element={<ProtectedRoute><Layout><Billing /></Layout></ProtectedRoute>} />
+    <Route path="/inventory" element={<ProtectedRoute><Layout><Inventory /></Layout></ProtectedRoute>} />
+    <Route path="/reports" element={<ProtectedRoute><Layout><Reports /></Layout></ProtectedRoute>} />
+    <Route path="/settings" element={<ProtectedRoute><Layout><Settings /></Layout></ProtectedRoute>} />
     <Route path="/admin/users" element={<ProtectedRoute><Layout><AdminUsers /></Layout></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
